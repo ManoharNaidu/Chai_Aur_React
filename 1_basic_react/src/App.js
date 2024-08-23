@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Chai from "./chai";
 
 function App() {
-  return <h1>Chai Aur React | Manohar Naidu</h1>;
+  return <Chai />;
 }
 
 export default App;
