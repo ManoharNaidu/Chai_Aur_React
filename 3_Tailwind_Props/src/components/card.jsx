@@ -1,4 +1,4 @@
-function Card(props) {
+function Card({ username, role = "Software Engineer" }) {
   return (
     <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
       <img
@@ -17,8 +17,8 @@ function Card(props) {
           </p>
         </blockquote>
         <figcaption className="font-medium">
-          <div className="text-sky-500 dark:text-sky-400">{props.username}</div>
-          <div className="text-slate-700 dark:text-slate-500">{props.role}</div>
+          <div className="text-sky-500 dark:text-sky-400">{username}</div>
+          <div className="text-slate-700 dark:text-slate-500">{role}</div>
         </figcaption>
       </div>
     </figure>
