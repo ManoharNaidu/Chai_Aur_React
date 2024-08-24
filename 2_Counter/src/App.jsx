@@ -5,11 +5,19 @@ function App() {
   let [counter, setCounter] = useState(0);
 
   const addValue = () => {
+    if (counter === 20) {
+      alert("Counter can't be more than 20");
+      return;
+    }
     counter++;
     setCounter(counter);
   };
 
   const remValue = () => {
+    if (counter === 0) {
+      alert("Counter can't be less than 0");
+      return;
+    }
     counter--;
     setCounter(counter);
   };
